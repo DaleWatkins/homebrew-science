@@ -1,7 +1,7 @@
 require 'formula'
 
 class Cufflinks < Formula
-  homepage "http://cole-trapnell-lab.github.io/cufflinks"
+  homepage "https://cole-trapnell-lab.github.io/cufflinks"
   url "http://cole-trapnell-lab.github.io/cufflinks/assets/downloads/cufflinks-2.2.1.tar.gz"
   sha1 "2b1b3a8f12cd2821ffc74ffbdd55cb329f37cbbb"
 
