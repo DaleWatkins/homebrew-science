@@ -22,8 +22,8 @@ class Cufflinks < Formula
                           "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
                           "--mandir=#{man}",
-                          "--with-boost=/usr/local/Cellar/boost/1.57.0",
-                          "--with-eigen=/usr/local/Cellar/eigen/3.2.2"
+                          "--with-boost=/usr/local/Cellar/boost/",
+                          "--with-eigen=/usr/local/Cellar/eigen/"
     system 'make'
     ENV.j1
     system 'make install'
