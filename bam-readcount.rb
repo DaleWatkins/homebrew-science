@@ -7,11 +7,11 @@ class BamReadcount < Formula
   head 'https://github.com/genome/bam-readcount.git'
 
   depends_on 'cmake' => :build
-  depends_on 'samtools'
+  depends_on 'samtools-0.1'
 
   def install
-    samtools = Formula["samtools"].opt_prefix
-    ENV['SAMTOOLS_ROOT'] = "#{samtools}:#{samtools}/include/bam"
+    samtools = Formula["samtools-0.1"].opt_prefix
+    ENV['SAMTOOLS_ROOT'] = "#{samtools-0.1}:#{samtools-0.1}/include/bam"
     system 'cmake', '.', *std_cmake_args
     system 'make'
     bin.install 'bin/bam-readcount'
